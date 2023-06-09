@@ -1,12 +1,8 @@
-#Fabian Kutschera 20.12.2020
 module load intel/2019 mpi.intel/2020
 export Mylibs=/import/freenas-m-05-seissol/SamoaRelated/myLibs
 export HDF5_BASE=/import/freenas-m-05-seissol/SamoaRelated/samoa/build/intel/parallel/
 export LD_LIBRARY_PATH=$NETCDF_BASE/lib/:$HDF5_BASE/lib/:$Mylibs/installDir/lib:$LD_LIBRARY_PATH
 
-#INPUT
-#wrong format because .h5 instead of posix (.bin) --> conversion first with conversion_h5_to_bin.sh 
-#input="/import/freenas-m-05-seissol/bo/CHEESE/forFabian/west_M7.343/HFFtest-surface.xdmf"
 
 #DR West 100 sec:
 #input=/import/freenas-m-05-seissol/kutschera/HIWI/SeisSol/surface_output_Iceland/west_M7.343_simple/west_M7.343/HFFtest_resampled-surface.xdmf 
@@ -33,7 +29,6 @@ output=tanioka_complex_west_M6.74.nc
 
 #BATHYMETRY
 bathy=/import/freenas-m-05-seissol/kutschera/HIWI/BathymetryNorthIceland.grd
-#bathy=/import/freenas-m-05-seissol/kutschera/HIWI/BathymetryNorthIceland_test.grd
 
 
 export HDF5_BASE=/import/freenas-m-05-seissol/SamoaRelated/samoa/build/intel/parallel/
