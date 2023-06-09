@@ -1,4 +1,3 @@
-#Fabian Kutschera 20.12.2020
 module load intel/2019 mpi.intel/2020
 export Mylibs=/import/freenas-m-05-seissol/SamoaRelated/myLibs
 export HDF5_BASE=/import/freenas-m-05-seissol/SamoaRelated/samoa/build/intel/parallel/
